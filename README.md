@@ -28,23 +28,23 @@ The application combines CRUD operations, REST APIs, and Machine Learning predic
 
 ## 3. Technology Stack
 ## Frontend
-HTML5
-CSS3
-Bootstrap 5
-Django Templates
+- HTML5
+- CSS3
+- Bootstrap 5
+- Django Templates
 ## Backend
-Python
-Django
-Django REST Framework
+- Python
+- Django
+- Django REST Framework
 ## Database
-SQLite
+- SQLite
 ## Machine Learning
-Scikit-learn
-Pandas
-NumPy
-Joblib
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
 ## API Documentation
-Swagger 
+- Swagger 
 ## Version Control
-Git
-GitHub
+- Git
+- GitHub
