@@ -66,3 +66,22 @@ python train_model.py
 python manage.py runserver
 ## Open Browser
 http://127.0.0.1:8000/
+
+## Input Features
+- Glucose Level
+- Haemoglobin Level
+- Cholesterol Level
+## Output Classes
+Normal
+Moderate Risk
+Diabetes Risk
+High Risk
+Critical Risk
+## Algorithm Used
+Decision Tree Classifier
+## Model Training
+python train_model.py
+## Model File
+health_model.pkl
+## 7. API Endpoints
+http://127.0.0.1:8000/api/
