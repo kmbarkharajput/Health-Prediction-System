@@ -48,3 +48,21 @@ The application combines CRUD operations, REST APIs, and Machine Learning predic
 ## Version Control
 - Git
 - GitHub
+
+## 4. Installation Steps
+cd healthpredictionsystem
+## Create Virtual Environment
+virtualenv venv
+## Activate Virtual Environment
+venv\Scripts\activate
+## Install Dependencies
+pip install -r requirements.txt
+## Apply Migrations
+- python manage.py makemigrations
+- python manage.py migrate
+## Train Machine Learning Model
+python train_model.py
+## Start Server
+python manage.py runserver
+## Open Browser
+http://127.0.0.1:8000/
