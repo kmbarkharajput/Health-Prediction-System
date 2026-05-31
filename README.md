@@ -25,3 +25,26 @@ The application combines CRUD operations, REST APIs, and Machine Learning predic
 ## Documentation
 - Swagger API documentation
 - DRF Browsable API
+
+## 3. Technology Stack
+## Frontend
+HTML5
+CSS3
+Bootstrap 5
+Django Templates
+## Backend
+Python
+Django
+Django REST Framework
+## Database
+SQLite
+## Machine Learning
+Scikit-learn
+Pandas
+NumPy
+Joblib
+## API Documentation
+Swagger 
+## Version Control
+Git
+GitHub
