@@ -71,12 +71,6 @@ http://127.0.0.1:8000/
 - Glucose Level
 - Haemoglobin Level
 - Cholesterol Level
-## Output Classes
-Normal
-Moderate Risk
-Diabetes Risk
-High Risk
-Critical Risk
 ## Algorithm Used
 Decision Tree Classifier
 ## Model Training
