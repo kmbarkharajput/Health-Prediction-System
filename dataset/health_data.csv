@@ -1,0 +1,51 @@
+glucose,haemoglobin,cholesterol,risk
+80,14.5,160,Normal
+85,14.2,170,Normal
+90,13.8,180,Normal
+95,14.0,185,Normal
+100,13.5,190,Normal
+105,13.2,195,Normal
+110,13.0,200,Normal
+115,12.8,205,Moderate Risk
+120,12.5,210,Moderate Risk
+125,12.3,215,Moderate Risk
+130,12.0,220,Moderate Risk
+135,11.8,225,Diabetes Risk
+140,11.5,230,Diabetes Risk
+145,11.2,235,Diabetes Risk
+150,11.0,240,Diabetes Risk
+155,10.8,245,High Risk
+160,10.5,250,High Risk
+165,10.3,255,High Risk
+170,10.0,260,High Risk
+175,9.8,265,High Risk
+180,9.5,270,Critical Risk
+185,9.3,275,Critical Risk
+190,9.0,280,Critical Risk
+195,8.8,285,Critical Risk
+200,8.5,290,Critical Risk
+82,14.4,165,Normal
+88,14.1,175,Normal
+92,13.9,182,Normal
+98,13.7,188,Normal
+108,13.1,198,Normal
+118,12.7,208,Moderate Risk
+128,12.2,218,Moderate Risk
+138,11.7,228,Diabetes Risk
+148,11.1,238,Diabetes Risk
+158,10.6,248,High Risk
+168,10.1,258,High Risk
+178,9.6,268,Critical Risk
+188,9.1,278,Critical Risk
+84,14.3,168,Normal
+94,13.8,186,Normal
+104,13.3,196,Normal
+114,12.9,206,Moderate Risk
+124,12.4,216,Moderate Risk
+134,11.9,226,Diabetes Risk
+144,11.4,236,Diabetes Risk
+154,10.9,246,High Risk
+164,10.4,256,High Risk
+174,9.9,266,High Risk
+184,9.4,276,Critical Risk
+194,8.9,286,Critical Risk

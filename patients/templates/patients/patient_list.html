@@ -1,0 +1,153 @@
+{% extends 'patients/base.html' %}
+
+{% comment %} {% extends "patients/base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Patient Records</h2>
+        <a href="{% url 'patient_create' %}" class="btn btn-primary">Add Patient</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+            <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Glucose</th>
+            <th>Haemoglobin</th>
+            <th>Cholesterol</th>
+            <th>Remarks</th>
+            <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for patient in patients %}
+            <tr>
+            <td>{{ patient.id }}</td>
+            <td>{{ patient.full_name }}</td>
+            <td>{{ patient.email }}</td>
+            <td>{{ patient.glucose }}</td>
+            <td>{{ patient.haemoglobin }}</td>
+            <td>{{ patient.cholesterol }}</td>
+            <td>{{ patient.remarks }}</td>
+            <td>
+                <a href="{% url 'patient_update' patient.id %}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{% url 'patient_delete' patient.id %}" class="btn btn-warning btn-sm" 
+                onClick="return confirm('Are you sure you want to delete this patient?');">Delete</a>
+            </td>
+            </tr>
+            {% empty %}
+            <tr>
+            <td colspan="8" class="text-center">No patient records found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %} {% endcomment %}
+
+
+
+
+{% block content %}
+
+<div class="card">
+
+    <div class="card-header bg-success text-white d-flex justify-content-between">
+
+        <h3>Patient Records</h3>
+
+        <a href="{% url 'patient_create' %}"
+           class="btn btn-light">
+            Add Patient
+        </a>
+
+    </div>
+
+    <div class="card-body">
+
+        <table class="table table-bordered table-striped">
+
+            <thead class="table-dark">
+
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>Email</th>
+                    <th>Glucose</th>
+                    <th>Haemoglobin</th>
+                    <th>Cholesterol</th>
+                    <th>Remarks</th>
+                    <th>Actions</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {% for patient in patients %}
+
+                <tr>
+
+                    <td>{{ patient.id }}</td>
+
+                    <td>{{ patient.full_name }}</td>
+
+                    <td>{{ patient.dob }}</td>
+
+                    <td>{{ patient.email }}</td>
+
+                    <td>{{ patient.glucose }}</td>
+
+                    <td>{{ patient.haemoglobin }}</td>
+
+                    <td>{{ patient.cholesterol }}</td>
+
+                    <td>
+                        <span class="badge bg-info">
+                            {{ patient.remarks }}
+                        </span>
+                    </td>
+
+                    <td>
+
+                        <a href="{% url 'patient_update' patient.id %}"
+                           class="btn btn-warning btn-sm">
+                            Edit
+                        </a>
+
+                        <a href="{% url 'patient_delete' patient.id %}"
+                           class="btn btn-danger btn-sm"
+                           onclick="return confirm('Are you sure you want to delete this patient?');">
+                            Delete
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                {% empty %}
+
+                <tr>
+
+                    <td colspan="9" class="text-center">
+                        No patient records found.
+                    </td>
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+{% endblock %}
